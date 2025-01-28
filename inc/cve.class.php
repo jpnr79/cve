@@ -57,7 +57,7 @@ class PluginCveCve extends CommonGLPI {
     *
     * @return boolean
     */
-   static function canView() {
+   static function canView():bool {
       return Config::canView();
    }
 
