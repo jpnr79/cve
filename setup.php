@@ -22,7 +22,7 @@
 
 define('PLUGIN_CVE_VERSION', '1.0.0');
 define('PLUGIN_CVE_MIN_GLPI', '9.5.0');
-define('PLUGIN_CVE_MAX_GLPI', '9.6.0');
+define('PLUGIN_CVE_MAX_GLPI', '12.0.0');
 
 function plugin_init_cve()
 {
