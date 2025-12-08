@@ -47,8 +47,8 @@ function plugin_version_cve()
 	   'homepage'     =>'https://github.com/cconard96/glpi-cve-plugin',
 	   'requirements' => [
 	      'glpi'   => [
-	         'min' => PLUGIN_CVE_MIN_GLPI,
-	         'max' => PLUGIN_CVE_MAX_GLPI
+	         'min' => '11.0',
+	         'max' => '12.0'
 	      ]
 	   ]
 	];
