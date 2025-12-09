@@ -233,7 +233,7 @@ class PluginCveCve extends CommonGLPI {
       $results = [];
 
       foreach ($software_data as $data) {
-         if (empty($data['vendor'])) {
+         if (empty($data['vendor']) || empty($data['product'])) {
             continue;
          }
          $cves = PluginCveApi::getCVEByVendorAndProduct($data['vendor'], $data['product']);
