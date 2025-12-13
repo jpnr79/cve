@@ -1,0 +1,67 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to static method getConfigurationValues\(\) on an unknown class Config\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/config.class.php
+
+		-
+			message: '#^Call to an undefined static method Html\:\:printAjaxPager\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/cve.class.php
+
+		-
+			message: '#^Call to an undefined static method PluginCveCve\:\:createTabEntry\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: inc/cve.class.php
+
+		-
+			message: '#^Call to static method canView\(\) on an unknown class Config\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/cve.class.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class SoftwareVersion\.$#'
+			identifier: class.notFound
+			count: 2
+			path: inc/cve.class.php
+
+		-
+			message: '#^Class SoftwareVersion not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/cve.class.php
+
+		-
+			message: '#^Call to static method getConfigurationValues\(\) on an unknown class Config\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/migration.class.php
+
+		-
+			message: '#^Call to static method getTable\(\) on an unknown class Config\.$#'
+			identifier: class.notFound
+			count: 1
+			path: inc/migration.class.php
+
+		-
+			message: '#^Class Config not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: setup.php
+
+		-
+			message: '#^Class SoftwareVersion not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: setup.php
+
+		-
+			message: '#^Call to an undefined method tests\\units\\PluginCveApi\:\:string\(\)\.$#'
+			identifier: method.notFound
+			count: 3
+			path: tests/units/PluginCveApi.php
