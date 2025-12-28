@@ -65,6 +65,10 @@ class PluginCveApi {
          return [];
       }
       if ($httpcode === 500) {
+         Toolbox::logInFile('cve', sprintf(
+            'ERROR [%s:%s] CVE-Search API returned 500, user=%s',
+            __FILE__, __FUNCTION__, $_SESSION['glpiname'] ?? 'unknown'
+         ));
          throw new RuntimeException(_x('error', 'Unknown CVE-Search API Error', 'cve'));
       }
 

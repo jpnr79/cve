@@ -1,3 +1,14 @@
+function plugin_cve_check_prerequisites() {
+	if (version_compare(GLPI_VERSION, '11.0', 'lt')) {
+		Toolbox::logInFile('cve', sprintf(
+			'ERROR [%s:%s] GLPI version too low: %s, user=%s',
+			__FILE__, __FUNCTION__, GLPI_VERSION, $_SESSION['glpiname'] ?? 'unknown'
+		));
+		echo "This plugin requires GLPI >= 11.0";
+		return false;
+	}
+	return true;
+}
 <?php
 /*
  -------------------------------------------------------------------------
